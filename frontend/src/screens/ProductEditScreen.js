@@ -101,6 +101,8 @@ const ProductEditScreen = ({ match, history }) => {
       </Link>
       <FormComponent>
         <h1>Edit Product</h1>
+        {loadingUpdate && <Loader />}
+        {loadingError && <Message variant="danger">{loadingError}</Message>}
         {loading ? (
           <Loader />
         ) : error ? (

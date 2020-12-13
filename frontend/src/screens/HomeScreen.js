@@ -9,6 +9,7 @@ import Pagination from "../components/Paginate";
 import ProductCarousel from "../components/ProductCarousel";
 import Meta from "../components/Meta";
 import { Link } from "react-router-dom";
+import { Fragment } from "react";
 
 const HomeScreen = ({ match }) => {
   const keyword = match.params.keyword;
@@ -31,31 +32,33 @@ const HomeScreen = ({ match }) => {
       {!keyword ? (
         <ProductCarousel />
       ) : (
-        <Link to="/" className="btn btn-light">
+        <Link to="/" className="btn btn-light mx-5 my-3">
           Go Back
         </Link>
       )}
-      <h1>Latest Products</h1>
-      {loading ? (
-        <Loader />
-      ) : error ? (
-        <Message variant="danger">{error}</Message>
-      ) : (
-        <>
-          <Row>
-            {products.map((product) => (
-              <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
-                <Products product={product} />
-              </Col>
-            ))}
-          </Row>
-          <Pagination
-            pages={pages}
-            page={page}
-            keyword={keyword ? keyword : ""}
-          />
-        </>
-      )}
+      <div className="px-5 py-3">
+        <h1>Latest Products</h1>
+        {loading ? (
+          <Loader />
+        ) : error ? (
+          <Message variant="danger">{error}</Message>
+        ) : (
+          <>
+            <Row>
+              {products.map((product) => (
+                <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
+                  <Products product={product} />
+                </Col>
+              ))}
+            </Row>
+            <Pagination
+              pages={pages}
+              page={page}
+              keyword={keyword ? keyword : ""}
+            />
+          </>
+        )}
+      </div>
     </>
   );
 };
