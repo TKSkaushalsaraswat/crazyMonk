@@ -1,6 +1,8 @@
 main {
   min-height: 80vh;
   height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
 h5 {
@@ -54,4 +56,49 @@ h5 {
   width: 100% !important;
   padding: 0 !important;
   margin: 0 !important;
+}
+
+.card-items {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-scl {
+  width: 20rem !important;
+}
+
+.product-class {
+  width: 20rem !important;
+}
+
+.slick-slide .product-class {
+  width: 20rem !important;
+}
+
+#prev,
+#next {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: #f7f7f7;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  outline: 0;
+  z-index: 100 !important;
+  cursor: pointer;
+  position: absolute;
+}
+
+#prev {
+  top: 50%;
+  left: -3rem !important;
+  transform: translate(50%, -50%);
+  /* display: none; */
+}
+
+#next {
+  top: 50%;
+  right: -3.5rem;
+  transform: translate(-50%, -50%);
 }
