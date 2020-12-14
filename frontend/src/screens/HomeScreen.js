@@ -17,8 +17,8 @@ function SampleNextArrow(props) {
     <button id="next" onClick={onClick}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
+        width="26"
+        height="26"
         viewBox="0 0 24 24"
       >
         <path fill="none" d="M0 0h24v24H0V0z" />
@@ -34,8 +34,8 @@ function SamplePrevArrow(props) {
     <button id="prev" onClick={onClick}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
+        width="26"
+        height="26"
         viewBox="0 0 24 24"
       >
         <path fill="none" d="M0 0h24v24H0V0z" />
@@ -220,7 +220,7 @@ const HomeScreen = ({ match }) => {
           <Message variant="danger">{error}</Message>
         ) : (
           <>
-            <Slider {...settings}>
+            <Slider className="slider" {...settings}>
               {products
                 .filter((p) => p.category === "pillows")
                 .map((product) => (

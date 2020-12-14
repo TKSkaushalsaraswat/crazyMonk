@@ -2,7 +2,7 @@ main {
   min-height: 80vh;
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 h5 {
@@ -80,7 +80,7 @@ h5 {
   display: flex;
   justify-content: center;
   align-content: center;
-  background: #f7f7f7;
+  background: #fff;
   border: none;
   padding: 8px;
   border-radius: 50%;
@@ -88,11 +88,18 @@ h5 {
   z-index: 100 !important;
   cursor: pointer;
   position: absolute;
+  transition: all 0.3s;
+}
+
+#prev:hover,
+#next:hover {
+  background-color: #f7f7f7 !important;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 #prev {
   top: 50%;
-  left: -3rem !important;
+  left: -3.5rem !important;
   transform: translate(50%, -50%);
   /* display: none; */
 }
@@ -101,4 +108,18 @@ h5 {
   top: 50%;
   right: -3.5rem;
   transform: translate(-50%, -50%);
+}
+
+.px-5 {
+  min-height: 40vh;
+}
+
+.slider {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.2rem !important;
+  }
 }
