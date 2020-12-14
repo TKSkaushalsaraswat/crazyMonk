@@ -2,6 +2,7 @@ main {
   min-height: 80vh;
   height: 100%;
   width: 100%;
+  background-color: #ffffff;
   /* overflow: hidden; */
 }
 
@@ -80,33 +81,35 @@ h5 {
   display: flex;
   justify-content: center;
   align-content: center;
-  background: #fff;
+  background: #f7f7f7;
   border: none;
   padding: 8px;
   border-radius: 50%;
   outline: 0;
-  z-index: 100 !important;
   cursor: pointer;
   position: absolute;
+  display: none;
   transition: all 0.3s;
 }
 
 #prev:hover,
 #next:hover {
-  background-color: #f7f7f7 !important;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 #prev {
+  z-index: 1 !important;
   top: 50%;
-  left: -3.5rem !important;
+  left: -1.5rem !important;
   transform: translate(50%, -50%);
   /* display: none; */
 }
 
 #next {
   top: 50%;
-  right: -3.5rem;
+  right: 0;
+  z-index: 1 !important;
+  right: -1.5rem !important;
   transform: translate(-50%, -50%);
 }
 
@@ -122,4 +125,68 @@ h5 {
   h1 {
     font-size: 1.2rem !important;
   }
+}
+
+.btn-text:link,
+.btn-text:visited {
+  font-size: 1.6rem;
+  color: #2998ff;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #2998ff;
+  padding: 3px;
+  transition: all 0.2s;
+}
+
+.slider-bg {
+  background-color: #ffffff;
+}
+
+.slider-bg:hover #prev {
+  display: block;
+}
+
+.slider-bg:hover #next {
+  display: block;
+}
+.card-class {
+  min-height: 21.5rem;
+}
+
+#showMore {
+  display: flex;
+  justify-content: center !important;
+  align-content: center !important;
+  background: #fff;
+  border: none;
+  padding: 2px;
+  border-radius: 50%;
+  outline: 0;
+  z-index: 100 !important;
+  cursor: pointer;
+  position: absolute;
+  transition: all 0.3s;
+  right: -1.5rem !important;
+  z-index: 100 !important;
+  top: 50%;
+  left: 6.5rem !important;
+  transform: translate(50%, -50%);
+}
+
+#showMore:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.arrow-ic {
+  color: #aaa6a6 !important;
+}
+
+.hide-class {
+  display: none !important;
+}
+
+#show-class {
+  border: none !important;
+  background-color: #f7f7f7 !important;
+  z-index: 10 !important;
 }
