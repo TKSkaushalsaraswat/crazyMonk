@@ -226,7 +226,7 @@ h5 {
 .navbar {
   width: 100%;
   z-index: 1000 !important;
-  /* height: 4.5rem !important; */
+  height: 4.5rem !important;
   background-color: #2c72eb !important ;
 }
 
@@ -267,11 +267,11 @@ h5 {
 
 @media (max-width: 900px) {
   .carousel-caption h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .carousel img {
     height: 18rem !important;
-    margin-top: 6rem !important;
+    margin-top: 6.5rem !important;
   }
   .carousel a {
     margin: 0 auto;
@@ -282,5 +282,64 @@ h5 {
   #prev,
   #next {
     display: block !important;
+  }
+  .navbar {
+    height: 100% !important;
+  }
+  #prev {
+    z-index: 1 !important;
+    top: 50%;
+    left: -4.5rem !important;
+    transform: translate(50%, -50%);
+    /* display: none; */
+  }
+
+  #next {
+    top: 50%;
+    right: 0;
+    z-index: 1 !important;
+    right: -4.5rem !important;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 600px) {
+  .card-class {
+    min-height: 5rem !important;
+    height: 17rem !important;
+  }
+  .cardImage {
+    height: 8rem !important;
+  }
+  .productName {
+    font-size: 0.7rem !important;
+    letter-spacing: normal !important;
+  }
+  .rating {
+    font-size: 0.7rem !important;
+  }
+  .price {
+    font-size: 0.8rem !important;
+  }
+  .slider-bg {
+    margin-left: -1rem !important;
+    width: 110% !important;
+  }
+  #prev {
+    left: -3.5rem !important;
+  }
+
+  #next {
+    right: -3.5rem !important;
+  }
+
+  #show-class {
+    height: 17rem !important;
+    border: none !important;
+    background-color: #f7f7f7 !important;
+    z-index: 10 !important;
+  }
+  #showMore {
+    left: 2.5rem !important;
   }
 }

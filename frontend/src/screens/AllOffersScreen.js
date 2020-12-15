@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 import Products from "../components/Products";
 import { listProducts } from "../actions/productActions";
 import Loader from "../components/Loader";
@@ -37,7 +37,7 @@ const AllOffersScreen = ({ match }) => {
       ) : error ? (
         <Message variant="danger">{error}</Message>
       ) : (
-        <>
+        <Container>
           <Row>
             {products
               .filter((p) => p.category === cat)
@@ -52,7 +52,7 @@ const AllOffersScreen = ({ match }) => {
             page={page}
             keyword={keyword ? keyword : ""}
           />
-        </>
+        </Container>
       )}
     </>
   );
