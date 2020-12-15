@@ -305,12 +305,18 @@ h5 {
 }
 
 @media (max-width: 600px) {
+  .carousel img {
+    height: 22rem;
+  }
+
   .card-class {
+    margin-left: -0.5rem !important;
+    width: 111% !important;
     min-height: 5rem !important;
-    height: 17rem !important;
+    height: 15rem !important;
   }
   .cardImage {
-    height: 8rem !important;
+    height: 7rem !important;
   }
   .productName {
     font-size: 0.7rem !important;
@@ -323,24 +329,32 @@ h5 {
     font-size: 0.8rem !important;
   }
   .slider-bg {
-    margin-left: -1rem !important;
-    width: 110% !important;
+    margin-left: -3rem !important;
+    width: 100vw !important;
   }
   #prev {
-    left: -3.5rem !important;
+    background-color: transparent !important;
+    left: -1.5rem !important;
   }
 
   #next {
-    right: -3.5rem !important;
+    background-color: transparent !important;
+    right: -1.5rem !important;
   }
 
   #show-class {
-    height: 17rem !important;
-    border: none !important;
+    margin-left: -0.5rem !important;
+    width: 111% !important;
+    min-height: 5rem !important;
+    height: 15rem !important;
     background-color: #f7f7f7 !important;
     z-index: 10 !important;
   }
   #showMore {
     left: 2.5rem !important;
+  }
+  .carousel img {
+    margin-top: 5rem !important;
+    height: 15rem !important;
   }
 }
