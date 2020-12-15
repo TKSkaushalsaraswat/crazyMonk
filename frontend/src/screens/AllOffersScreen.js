@@ -31,7 +31,7 @@ const AllOffersScreen = ({ match }) => {
       <Link to="/" className="btn btn-light my-3">
         Go Back
       </Link>
-      <h1>Today All Offers</h1>
+      <h1 className="showAllHeading">Today All Offers</h1>
       {loading ? (
         <Loader />
       ) : error ? (
@@ -42,7 +42,14 @@ const AllOffersScreen = ({ match }) => {
             {products
               .filter((p) => p.category === cat)
               .map((product) => (
-                <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
+                <Col
+                  className="showAllCol"
+                  key={product._id}
+                  sm={12}
+                  md={6}
+                  lg={4}
+                  xl={3}
+                >
                   <Products product={product} />
                 </Col>
               ))}

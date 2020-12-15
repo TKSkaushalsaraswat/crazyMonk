@@ -360,4 +360,11 @@ h5 {
   .heading-main {
     margin-left: -3.2rem !important;
   }
+  .showAllCol {
+    width: 13rem !important;
+    margin-left: 1.2rem !important;
+  }
+  .showAllHeading {
+    margin-left: 1.2rem;
+  }
 }
