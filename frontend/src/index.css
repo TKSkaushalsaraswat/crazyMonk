@@ -361,8 +361,8 @@ h5 {
     margin-left: -3.2rem !important;
   }
   .showAllCol {
-    width: 13rem !important;
-    margin-left: 1.2rem !important;
+    width: 15rem !important;
+    margin: auto !important;
   }
   .showAllHeading {
     margin-left: 1.2rem;
