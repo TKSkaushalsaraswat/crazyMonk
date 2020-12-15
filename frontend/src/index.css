@@ -261,8 +261,9 @@ h5 {
 }
 
 .slider-class {
-  background-image: url("https://i.ibb.co/484VyGq/slider3.jpg");
+  background-image: url("./img/slider3.jpg");
   background-size: cover;
+  background-color: #0d001f;
 }
 
 @media (max-width: 900px) {
