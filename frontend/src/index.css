@@ -311,7 +311,8 @@ h5 {
 
   .card-class {
     margin-left: -0.5rem !important;
-    width: 111% !important;
+    margin-right: 0.5rem !important;
+    width: 110% !important;
     min-height: 5rem !important;
     height: 15rem !important;
   }
@@ -361,10 +362,24 @@ h5 {
     margin-left: -3.2rem !important;
   }
   .showAllCol {
-    width: 15rem !important;
+    width: 12rem !important;
     margin: auto !important;
   }
   .showAllHeading {
     margin-left: 1.2rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .showAllCol {
+    width: 10rem !important;
+    margin: auto !important;
+  }
+}
+
+@media (max-width: 350px) {
+  .showAllCol {
+    width: 14rem !important;
+    margin: auto !important;
   }
 }
