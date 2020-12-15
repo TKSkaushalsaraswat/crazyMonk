@@ -280,10 +280,10 @@ h5 {
   .form-controll {
     width: 100% !important;
   }
-  #prev,
+  /* #prev,
   #next {
     display: block !important;
-  }
+  } */
   .navbar {
     height: 100% !important;
   }
@@ -344,7 +344,7 @@ h5 {
 
   #show-class {
     margin-left: -0.5rem !important;
-    width: 111% !important;
+    width: 110% !important;
     min-height: 5rem !important;
     height: 15rem !important;
     background-color: #f7f7f7 !important;
@@ -356,5 +356,8 @@ h5 {
   .carousel img {
     margin-top: 5rem !important;
     height: 15rem !important;
+  }
+  .heading-main {
+    margin-left: -3.2rem !important;
   }
 }
