@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { listProducts } from "../actions/productActions";
 import ProductCarousel from "../components/ProductCarousel";
 import Meta from "../components/Meta";
-import { Link } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
 import FilterProduct from "../components/FilterProduct";
 
 const HomeScreen = ({ match }) => {
@@ -28,31 +28,81 @@ const HomeScreen = ({ match }) => {
         </Link>
       )}
       <div className="px-5 py-3">
-        <FilterProduct categoryName="hoddie" heading="Latest Men's Hoddies" />
-      </div>
-      <div className="px-5 py-3">
-        <FilterProduct categoryName="cups" heading="Latest Cups" />
-      </div>
-      <div className="px-5 py-3">
-        <FilterProduct categoryName="cases" heading="Latest Phone's Cases" />
-      </div>
-      <div className="px-5 py-3">
-        <FilterProduct
-          categoryName="whoddies"
-          heading="Latest Women's Hoddie"
+        <Route
+          render={({ match }) => (
+            <FilterProduct
+              categoryName="hoddie"
+              heading="Latest Men's Hoddies"
+              match={match}
+            />
+          )}
         />
       </div>
       <div className="px-5 py-3">
-        <FilterProduct categoryName="mtshirt" heading="Latest Man's T-Shirts" />
-      </div>
-      <div className="px-5 py-3">
-        <FilterProduct
-          categoryName="wtshirt"
-          heading="Latest Women's T-Shirts"
+        <Route
+          render={({ match }) => (
+            <FilterProduct
+              categoryName="cups"
+              heading="Latest Cups"
+              match={match}
+            />
+          )}
         />
       </div>
       <div className="px-5 py-3">
-        <FilterProduct categoryName="pillows" heading="Pillows Cover" />
+        <Route
+          render={({ match }) => (
+            <FilterProduct
+              categoryName="cases"
+              heading="Latest Phone's Cases"
+              match={match}
+            />
+          )}
+        />
+      </div>
+      <div className="px-5 py-3">
+        <Route
+          render={({ match }) => (
+            <FilterProduct
+              categoryName="whoddies"
+              heading="Latest Women's Hoddie"
+              match={match}
+            />
+          )}
+        />
+      </div>
+      <div className="px-5 py-3">
+        <Route
+          render={({ match }) => (
+            <FilterProduct
+              categoryName="mtshirt"
+              heading="Latest Man's T-Shirts"
+              match={match}
+            />
+          )}
+        />
+      </div>
+      <div className="px-5 py-3">
+        <Route
+          render={({ match }) => (
+            <FilterProduct
+              categoryName="wtshirt"
+              heading="Latest Women's T-Shirts"
+              match={match}
+            />
+          )}
+        />
+      </div>
+      <div className="px-5 py-3">
+        <Route
+          render={({ match }) => (
+            <FilterProduct
+              categoryName="pillows"
+              heading="Pillows Cover"
+              match={match}
+            />
+          )}
+        />
       </div>
     </>
   );

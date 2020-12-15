@@ -5,6 +5,7 @@ import { Col, Card, OverlayTrigger, Tooltip } from "react-bootstrap";
 import Products from "./Products";
 import Loader from "./Loader";
 import Message from "./Message";
+import { Link } from "react-router-dom";
 
 function SampleNextArrow(props) {
   const { onClick } = props;
@@ -48,22 +49,25 @@ const renderTooltip = (props) => (
 
 function ShowMore(props) {
   const { onClick } = props;
+
   return (
     <>
       <OverlayTrigger
         placement="top"
-        delay={{ show: 250, hide: 400 }}
+        delay={{ show: 50, hide: 400 }}
         overlay={renderTooltip}
       >
-        <button id="showMore" onClick={onClick}>
+        <Link to={`/alloffers/${onClick}`} id="showMore">
           <i className="far fa-arrow-alt-circle-right fa-3x arrow-ic"></i>
-        </button>
+        </Link>
       </OverlayTrigger>
     </>
   );
 }
 
-const FilterProduct = ({ categoryName, heading = "Latest Products" }) => {
+const FilterProduct = ({ categoryName, heading, match }) => {
+  const keyword = match.params.keyword;
+
   const settings = {
     dots: false,
     infinite: false,
@@ -121,15 +125,14 @@ const FilterProduct = ({ categoryName, heading = "Latest Products" }) => {
                 </Col>
               ))
               .filter((_, i) => i < 7)}
-            <Card className="my-2 p-3 card-class rounded" id="show-class">
-              <ShowMore />
-            </Card>
+            {!keyword ? (
+              <Card className="my-2 p-3 card-class" id="show-class">
+                <ShowMore onClick={categoryName} />
+              </Card>
+            ) : (
+              ""
+            )}
           </Slider>
-          {/* <Pagination
-              pages={pages}
-              page={page}
-              keyword={keyword ? keyword : ""}
-            /> */}
         </>
       )}
     </>
