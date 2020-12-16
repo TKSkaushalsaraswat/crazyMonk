@@ -17,6 +17,9 @@ const CartScreen = ({ match, location, history }) => {
   const productId = match.params.id;
 
   const qty = location.search ? Number(location.search.split("=")[1]) : 1;
+  const size = location.search
+    ? location.search.split("?")[1].split(":")[1]
+    : "XL";
 
   const dispatch = useDispatch();
 
@@ -26,13 +29,12 @@ const CartScreen = ({ match, location, history }) => {
 
   useEffect(() => {
     if (productId) {
-      dispatch(addToCart(productId, qty));
+      dispatch(addToCart(productId, qty, size));
     }
   }, [dispatch, productId, qty]);
 
   const removeFromCartHandler = (id) => {
     dispatch(removeFromCart(id));
-    console.log(id);
   };
 
   const checkoutHandler = (id) => {

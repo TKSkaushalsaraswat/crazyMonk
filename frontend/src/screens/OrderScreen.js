@@ -11,12 +11,16 @@ import {
   ORDER_PAY_RESET,
   ORDER_DELIVER_RESET,
 } from "../constants/orderConstants";
+import { listProducts } from "../actions/productActions";
 
 const OrderScreen = ({ match, history }) => {
   const [sdkReady, setSdkReady] = useState(false);
 
   const orderId = match.params.id;
   const dispatch = useDispatch();
+
+  const productList = useSelector((state) => state.productList);
+  const { products, pageNumber } = productList;
 
   const orderDetails = useSelector((state) => state.orderDetails);
   const { order, loading, error } = orderDetails;
@@ -46,6 +50,8 @@ const OrderScreen = ({ match, history }) => {
       history.push("/login");
     }
 
+    dispatch(listProducts("", pageNumber));
+
     const addPayPalScript = async () => {
       const { data: clientId } = await axios.get("/api/config/paypal");
       const script = document.createElement("script");
@@ -69,7 +75,16 @@ const OrderScreen = ({ match, history }) => {
     } else {
       setSdkReady(true);
     }
-  }, [dispatch, orderId, successPay, order, deliverSuccess, history, userInfo]);
+  }, [
+    dispatch,
+    orderId,
+    successPay,
+    order,
+    deliverSuccess,
+    history,
+    userInfo,
+    pageNumber,
+  ]);
 
   const successPaymentHandle = (paymentResult) => {
     dispatch(payOrder(orderId, paymentResult));
@@ -152,6 +167,19 @@ const OrderScreen = ({ match, history }) => {
                             {item.name}
                           </Link>
                         </Col>
+
+                        {products
+                          .filter(
+                            (product) =>
+                              (product.category === "hoddie" ||
+                                product.category === "whoddies" ||
+                                product.category === "mtshirt" ||
+                                product.category === "wtshirt") &&
+                              product._id === item.product
+                          )
+                          .map((_, i) => (
+                            <Col key={i}>Size: {item.size}</Col>
+                          ))}
                         <Col md={4}>
                           {item.qty} x ${item.price} = ${item.qty * item.price}
                         </Col>

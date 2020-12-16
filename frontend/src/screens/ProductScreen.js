@@ -24,6 +24,7 @@ const ProductScreen = ({ match, history }) => {
   const [qty, setQty] = useState(1);
   const [rating, setRating] = useState(0);
   const [comment, setComment] = useState("");
+  const [size, setSize] = useState("XL");
 
   const dispatch = useDispatch();
 
@@ -50,7 +51,7 @@ const ProductScreen = ({ match, history }) => {
   }, [dispatch, match, successProductReview]);
 
   const addToCartHandler = () => {
-    history.push(`/cart/${match.params.id}?qty=${qty}`);
+    history.push(`/cart/${match.params.id}?size:${size}?qty=${qty}`);
   };
 
   const submitHandler = (e) => {
@@ -92,6 +93,31 @@ const ProductScreen = ({ match, history }) => {
                   />
                 </ListGroup.Item>
                 <ListGroup.Item>Price: ${product.price}</ListGroup.Item>
+                {(product.category === "hoddie" ||
+                  product.category === "whoddies" ||
+                  product.category === "mtshirt" ||
+                  product.category === "wtshirt") && (
+                  <ListGroup.Item>
+                    <Row>
+                      <Col>Size</Col>
+                      <Col>
+                        <Form.Control
+                          as="select"
+                          value={size || ""}
+                          onChange={(e) => {
+                            setSize(e.target.value);
+                          }}
+                        >
+                          <option value="S">S</option>
+                          <option value="M">M</option>
+                          <option value="L">L</option>
+                          <option value="XL">XL</option>
+                          <option value="XLL">XLL</option>
+                        </Form.Control>
+                      </Col>
+                    </Row>
+                  </ListGroup.Item>
+                )}
                 <ListGroup.Item>
                   Description : {product.description}
                 </ListGroup.Item>
