@@ -3,7 +3,7 @@ main {
   height: 100%;
   width: 100%;
   background-color: #ffffff;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 h5 {
@@ -18,7 +18,6 @@ h5 {
   margin: 0 !important;
   transition: all 0.3s;
 }
-
 .cardImage {
   width: 100% !important;
   height: 11rem !important;
@@ -388,6 +387,7 @@ h5 {
 
   .showAllContainer {
     width: 100vw !important;
+    overflow: hidden !important;
   }
 }
 
