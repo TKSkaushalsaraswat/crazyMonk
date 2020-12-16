@@ -180,6 +180,15 @@ const OrderScreen = ({ match, history }) => {
                           .map((_, i) => (
                             <Col key={i}>Size: {item.size}</Col>
                           ))}
+                        {products
+                          .filter(
+                            (product) =>
+                              product.category === "cases" &&
+                              product._id === item.product
+                          )
+                          .map((_, i) => (
+                            <Col key={i}>PhoneName: {item.phoneName}</Col>
+                          ))}
                         <Col md={4}>
                           {item.qty} x ${item.price} = ${item.qty * item.price}
                         </Col>

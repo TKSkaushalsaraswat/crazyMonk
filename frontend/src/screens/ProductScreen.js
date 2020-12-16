@@ -24,6 +24,7 @@ const ProductScreen = ({ match, history }) => {
   const [qty, setQty] = useState(1);
   const [rating, setRating] = useState(0);
   const [comment, setComment] = useState("");
+  const [phoneName, setPhoneName] = useState("");
   const [size, setSize] = useState("XL");
 
   const dispatch = useDispatch();
@@ -51,7 +52,13 @@ const ProductScreen = ({ match, history }) => {
   }, [dispatch, match, successProductReview]);
 
   const addToCartHandler = () => {
-    history.push(`/cart/${match.params.id}?size:${size}?qty=${qty}`);
+    if (product.category === "cases") {
+      history.push(
+        `/cart/${match.params.id}?phone:${phoneName.trim()}?qty=${qty}`
+      );
+    } else {
+      history.push(`/cart/${match.params.id}?size:${size}?qty=${qty}`);
+    }
   };
 
   const submitHandler = (e) => {
@@ -93,6 +100,20 @@ const ProductScreen = ({ match, history }) => {
                   />
                 </ListGroup.Item>
                 <ListGroup.Item>Price: ${product.price}</ListGroup.Item>
+                {product.category === "cases" && (
+                  <ListGroup.Item>
+                    <Form.Group controlId="phonename">
+                      <Row>
+                        <Form.Control
+                          row="3"
+                          placeholder="Enter Phone Name"
+                          value={phoneName}
+                          onChange={(e) => setPhoneName(e.target.value)}
+                        ></Form.Control>
+                      </Row>
+                    </Form.Group>
+                  </ListGroup.Item>
+                )}
                 {(product.category === "hoddie" ||
                   product.category === "whoddies" ||
                   product.category === "mtshirt" ||

@@ -21,6 +21,10 @@ const CartScreen = ({ match, location, history }) => {
     ? location.search.split("?")[1].split(":")[1]
     : "XL";
 
+  const phoneName = location.search
+    ? location.search.split("?")[1].split(":")[1]
+    : "";
+
   const dispatch = useDispatch();
 
   const cart = useSelector((state) => state.cart);
@@ -29,9 +33,9 @@ const CartScreen = ({ match, location, history }) => {
 
   useEffect(() => {
     if (productId) {
-      dispatch(addToCart(productId, qty, size));
+      dispatch(addToCart(productId, qty, size, phoneName));
     }
-  }, [dispatch, productId, qty]);
+  }, [dispatch, productId, qty, size, phoneName]);
 
   const removeFromCartHandler = (id) => {
     dispatch(removeFromCart(id));
