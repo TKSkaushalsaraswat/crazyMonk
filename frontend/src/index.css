@@ -227,8 +227,8 @@ h5 {
   width: 100%;
   z-index: 1000 !important;
   height: 4.5rem !important;
-  background-image: linear-gradient(to right, #05080d, #041b36 50%, #05080d);
-  /* background-color: #2c72eb !important ; */
+  /* background-image: linear-gradient(to right, #05080d, #041b36 50%, #05080d); */
+  background-color: #2c72eb !important ;
 }
 
 .form-controll {
@@ -380,7 +380,7 @@ h5 {
 
 @media (max-width: 397px) {
   .showAllCol {
-    width: 11.5rem !important;
+    width: 11.8rem !important;
     /* margin: auto !important; */
     margin-left: -0.5rem !important;
     margin-right: 0.2rem !important;
@@ -388,6 +388,24 @@ h5 {
 
   .showAllContainer {
     width: 100vw !important;
+  }
+}
+
+@media (max-width: 389px) {
+  .showAllCol {
+    width: 11.6rem !important;
+  }
+}
+
+@media (max-width: 382px) {
+  .showAllCol {
+    width: 11.5rem !important;
+  }
+}
+
+@media (max-width: 377px) {
+  .showAllCol {
+    width: 11.4rem !important;
   }
 }
 
