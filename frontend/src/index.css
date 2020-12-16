@@ -383,27 +383,7 @@ h5 {
 
 @media (max-width: 396px) {
   .showAllCol {
-    width: 11rem !important;
-    margin: auto !important;
-    margin-left: -0.5rem !important;
-  }
-}
-
-@media (max-width: 365px) {
-  .showAllCol {
-    width: 10rem !important;
-    margin: auto !important;
-    margin-left: -0.8rem !important;
-  }
-}
-
-@media (max-width: 325px) {
-  .showAllCol {
-    width: 14rem !important;
+    width: 15rem !important;
     margin: auto !important;
   }
-}
-
-.sortable-handler {
-  touch-action: none;
 }
