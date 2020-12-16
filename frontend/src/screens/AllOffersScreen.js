@@ -37,7 +37,7 @@ const AllOffersScreen = ({ match }) => {
       ) : error ? (
         <Message variant="danger">{error}</Message>
       ) : (
-        <Container>
+        <Container className="showAllContainer">
           <Row>
             {products
               .filter((p) => p.category === cat)
