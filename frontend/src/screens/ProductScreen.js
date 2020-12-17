@@ -99,13 +99,14 @@ const ProductScreen = ({ match, history }) => {
                     text={` ${product.numReviews} reviews`}
                   />
                 </ListGroup.Item>
-                <ListGroup.Item>Price: ${product.price}</ListGroup.Item>
+                <ListGroup.Item>Price: ₹{product.price}</ListGroup.Item>
                 {product.category === "cases" && (
                   <ListGroup.Item>
                     <Form.Group controlId="phonename">
                       <Row>
                         <Form.Control
                           row="3"
+                          required
                           placeholder="Enter Phone Name"
                           value={phoneName}
                           onChange={(e) => setPhoneName(e.target.value)}
@@ -151,7 +152,7 @@ const ProductScreen = ({ match, history }) => {
                     <Row>
                       <Col>Price:</Col>
                       <Col>
-                        <strong>${product.price}</strong>
+                        <strong>₹{product.price}</strong>
                       </Col>
                     </Row>
                   </ListGroup.Item>

@@ -43,7 +43,7 @@ const HomeScreen = ({ match }) => {
           render={({ match }) => (
             <FilterProduct
               categoryName="cups"
-              heading="Latest Cups"
+              heading="Latest Coffee Mugs"
               match={match}
             />
           )}
@@ -98,7 +98,7 @@ const HomeScreen = ({ match }) => {
           render={({ match }) => (
             <FilterProduct
               categoryName="pillows"
-              heading="Pillows Cover"
+              heading="Latest Pillows & Cushion"
               match={match}
             />
           )}
