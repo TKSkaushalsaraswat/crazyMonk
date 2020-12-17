@@ -27,7 +27,6 @@ const App = () => {
       <Header />
       <main>
         <Container>
-          <Route path="/alloffers/:cat" component={AllOffersScreen} />
           <Route path="/order/:id" component={OrderScreen} />
           <Route path="/admin/orderlist" component={OrderListScreen} />
           <Route path="/placeorder" component={PlaceorderScreen} />
@@ -36,7 +35,6 @@ const App = () => {
           <Route path="/profile" component={ProfileScreeen} />
           <Route path="/login" component={LoginScreen} />
           <Route path="/register" component={RegisterScreen} />
-          <Route path="/product/:id" component={ProductScreen} />
           <Route path="/cart/:id?" component={CartScreen} />
           <Route path="/admin/userlist" component={UsersListScreen} />
           <Route path="/admin/user/:id/edit" component={UserEditScreen} />
@@ -52,6 +50,8 @@ const App = () => {
           />
           <Route path="/admin/product/:id/edit" component={ProductEditScreen} />
         </Container>
+        <Route path="/alloffers/:cat" component={AllOffersScreen} />
+        <Route path="/product/:id" component={ProductScreen} />
         <Route path="/search/:keyword" component={HomeScreen} exact />
         <Route path="/page/:pageNumber" component={HomeScreen} exact />
         <Route

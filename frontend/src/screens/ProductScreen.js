@@ -72,9 +72,9 @@ const ProductScreen = ({ match, history }) => {
   };
 
   return (
-    <>
+    <div className="product-screen_container">
       <Link to="/" className="btn btn-light my-3">
-        Go Back
+        <i className="fas fa-long-arrow-alt-left"></i> Go Back
       </Link>
 
       {loading ? (
@@ -91,7 +91,7 @@ const ProductScreen = ({ match, history }) => {
             <Col md={3}>
               <ListGroup variant="flush">
                 <ListGroup.Item>
-                  <h4>{product.name}</h4>
+                  <h4 className="product-name">{product.name}</h4>
                 </ListGroup.Item>
                 <ListGroup.Item>
                   <Rating
@@ -267,7 +267,7 @@ const ProductScreen = ({ match, history }) => {
           </Row>
         </>
       )}
-    </>
+    </div>
   );
 };
 

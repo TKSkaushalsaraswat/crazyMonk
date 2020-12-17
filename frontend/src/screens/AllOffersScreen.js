@@ -26,7 +26,7 @@ const AllOffersScreen = ({ match }) => {
   }, [dispatch, keyword, pageNumber]);
 
   return (
-    <>
+    <div className="showAllParent">
       <Meta />
       <Link to="/" className="btn btn-light my-3">
         Go Back
@@ -37,7 +37,7 @@ const AllOffersScreen = ({ match }) => {
       ) : error ? (
         <Message variant="danger">{error}</Message>
       ) : (
-        <Container className="showAllContainer">
+        <div className="showAllContainer">
           <Row>
             {products
               .filter((p) => p.category === cat)
@@ -59,9 +59,9 @@ const AllOffersScreen = ({ match }) => {
             page={page}
             keyword={keyword ? keyword : ""}
           />
-        </Container>
+        </div>
       )}
-    </>
+    </div>
   );
 };
 

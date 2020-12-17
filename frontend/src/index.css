@@ -5,6 +5,16 @@ main {
   background-color: #ffffff;
   overflow: hidden;
 }
+.showAllParent {
+  padding-top: 0.5rem;
+  padding-left: 3.5rem !important;
+  padding-right: 3.5rem !important;
+}
+.product-screen_container {
+  padding-top: 0.5rem;
+  padding-left: 3.5rem !important;
+  padding-right: 3.5rem !important;
+}
 
 h5 {
   font-size: 0.9rem !important;
@@ -294,6 +304,11 @@ h5 {
     transform: translate(50%, -50%);
     /* display: none; */
   }
+  .showAllParent {
+    padding-top: 0.5rem;
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+  }
 
   #next {
     top: 50%;
@@ -308,7 +323,11 @@ h5 {
   .carousel img {
     height: 20rem !important;
   }
-
+  .product-screen_container {
+    padding-top: 0.5rem;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
   .card-class {
     width: 111% !important;
     min-height: 5rem !important;
@@ -361,7 +380,7 @@ h5 {
     margin-left: -3.2rem !important;
   }
   .showAllCol {
-    width: 12rem !important;
+    width: 10rem !important;
     margin: auto !important;
   }
   .showAllHeading {
@@ -370,24 +389,16 @@ h5 {
 }
 
 @media (max-width: 420px) {
+  .showAllParent {
+    padding-top: 0.5rem;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+
   .showAllCol {
     width: 12rem !important;
     margin: auto !important;
     margin-left: -0.5rem !important;
-  }
-}
-
-@media (max-width: 397px) {
-  .showAllCol {
-    width: 11.8rem !important;
-    /* margin: auto !important; */
-    margin-left: -0.5rem !important;
-    margin-right: 0.2rem !important;
-  }
-
-  .showAllContainer {
-    width: 100vw !important;
-    overflow: hidden !important;
   }
 }
 
@@ -409,7 +420,7 @@ h5 {
   }
 }
 
-@media (max-width: 365px) {
+@media (max-width: 366px) {
   .showAllCol {
     width: 11rem !important;
     margin-left: -0.5rem !important;
@@ -417,6 +428,13 @@ h5 {
   }
 }
 
+@media (max-width: 360px) {
+  .showAllCol {
+    width: 10.7rem !important;
+    margin-left: -0.5rem !important;
+    margin-right: 0.2rem !important;
+  }
+}
 @media (max-width: 350px) {
   .showAllContainer {
     width: 100vw !important;
@@ -436,4 +454,9 @@ h5 {
     width: 13rem !important;
     margin: auto !important;
   }
+}
+
+.product-name {
+  color: #333 !important;
+  font-size: 1rem !important;
 }
