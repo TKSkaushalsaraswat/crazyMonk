@@ -380,7 +380,7 @@ h5 {
     left: 2.5rem !important;
   }
   .carousel img {
-    margin-top: 6rem !important;
+    margin-top: 7.5rem !important;
     height: 18rem !important;
   }
   .heading-main {
@@ -414,7 +414,7 @@ h5 {
 
 @media (max-width: 389px) {
   .carousel img {
-    margin-top: 7rem !important;
+    margin-top: 7.5rem !important;
     height: 17rem !important;
   }
   .showAllCol {
