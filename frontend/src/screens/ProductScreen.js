@@ -121,7 +121,7 @@ const ProductScreen = ({ match, history }) => {
                   product.category === "wtshirt") && (
                   <ListGroup.Item>
                     <Row>
-                      <Col>Size</Col>
+                      <Col>Size:</Col>
                       <Col>
                         <Form.Control
                           as="select"
@@ -209,7 +209,7 @@ const ProductScreen = ({ match, history }) => {
             </Col>
           </Row>
           <Row>
-            <Col md={6} className="py-5">
+            <Col md={6} className="py-5 reviews-class">
               <h2>Reviews</h2>
               {product.reviews.length === 0 && <Message>No Reviews</Message>}
               <ListGroup variant="flush">

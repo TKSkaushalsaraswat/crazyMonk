@@ -29,7 +29,7 @@ const AllOffersScreen = ({ match }) => {
     <div className="showAllParent">
       <Meta />
       <Link to="/" className="btn btn-light my-3">
-        Go Back
+        <i className="fas fa-long-arrow-alt-left"></i> Go Back
       </Link>
       <h1 className="showAllHeading">Today All Offers</h1>
       {loading ? (

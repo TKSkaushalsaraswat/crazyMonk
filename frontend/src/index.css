@@ -7,6 +7,7 @@ main {
 }
 .showAllParent {
   padding-top: 0.5rem;
+  padding-bottom: 1.5rem;
   padding-left: 3.5rem !important;
   padding-right: 3.5rem !important;
 }
@@ -14,6 +15,9 @@ main {
   padding-top: 0.5rem;
   padding-left: 3.5rem !important;
   padding-right: 3.5rem !important;
+}
+.reviews-class {
+  padding-left: 3rem !important;
 }
 
 h5 {
@@ -277,11 +281,14 @@ h5 {
 }
 
 @media (max-width: 900px) {
+  .reviews-class {
+    padding-left: 1rem !important;
+  }
   .carousel-caption h2 {
     font-size: 1.2rem;
   }
   .carousel img {
-    height: 18rem !important;
+    height: 20rem !important;
     margin-top: 6.5rem !important;
   }
   .carousel a {
@@ -373,8 +380,8 @@ h5 {
     left: 2.5rem !important;
   }
   .carousel img {
-    margin-top: 5rem !important;
-    height: 15rem !important;
+    margin-top: 6rem !important;
+    height: 18rem !important;
   }
   .heading-main {
     margin-left: -3.2rem !important;
@@ -394,6 +401,9 @@ h5 {
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
   }
+  .showAllHeading {
+    margin-left: -0.5rem !important;
+  }
 
   .showAllCol {
     width: 12rem !important;
@@ -403,6 +413,10 @@ h5 {
 }
 
 @media (max-width: 389px) {
+  .carousel img {
+    margin-top: 7rem !important;
+    height: 17rem !important;
+  }
   .showAllCol {
     width: 11.6rem !important;
   }
@@ -425,6 +439,9 @@ h5 {
     width: 11rem !important;
     margin-left: -0.5rem !important;
     margin-right: 0.2rem !important;
+  }
+  .carousel img {
+    height: 16rem !important;
   }
 }
 

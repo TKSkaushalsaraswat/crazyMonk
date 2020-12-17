@@ -159,3 +159,11 @@ ul {
   font-size: 14px;
   color: #878787;
 }
+
+@media (max-width: 600px) {
+  h4 {
+    margin-top: 0.8rem !important;
+    font-size: 0.8rem !important;
+    line-height: 5px !important;
+  }
+}
