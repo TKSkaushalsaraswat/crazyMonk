@@ -1,6 +1,6 @@
 const products = [
   {
-    name: "Android Red Hoddie For Android Devs",
+    name: "Android Red Hoodies For Android Devs",
     image: "/images/hoddies/android.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
@@ -12,7 +12,7 @@ const products = [
     numReviews: 12,
   },
   {
-    name: "React Vue Angular Red Hoddie",
+    name: "React Vue Angular Red Hoodies",
     image: "/images/hoddies/rva1.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
@@ -24,7 +24,7 @@ const products = [
     numReviews: 12,
   },
   {
-    name: "Flutter Black Hoddie For Flutter Devs",
+    name: "Flutter Black Hoodies For Flutter Devs",
     image: "/images/hoddies/flutter.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
@@ -36,7 +36,7 @@ const products = [
     numReviews: 12,
   },
   {
-    name: "I'M A Programmer Black Hoddie",
+    name: "I'M A Programmer Black Hoodies",
     image: "/images/hoddies/programmer.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
@@ -48,7 +48,7 @@ const products = [
     numReviews: 12,
   },
   {
-    name: "I'M Programmer Black Hoddie",
+    name: "I'M Programmer Black Hoodies",
     image: "/images/hoddies/programmer2.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
@@ -60,7 +60,7 @@ const products = [
     numReviews: 12,
   },
   {
-    name: "Python Red Hoddie For Python Devs",
+    name: "Python Red Hoodies For Python Devs",
     image: "/images/hoddies/python.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
@@ -72,7 +72,7 @@ const products = [
     numReviews: 12,
   },
   {
-    name: "You Are Semicolon Black Hoddie",
+    name: "You Are Semicolon Black Hoodies",
     image: "/images/hoddies/semicolon.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
@@ -84,7 +84,7 @@ const products = [
     numReviews: 12,
   },
   {
-    name: "I'M Programmer Black Hoddie ",
+    name: "I'M Programmer Black Hoodies ",
     image: "/images/hoddies/trustme.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
@@ -96,7 +96,7 @@ const products = [
     numReviews: 12,
   },
   {
-    name: "React Vue Angular Yellow Hoddie",
+    name: "React Vue Angular Yellow Hoodies",
     image: "/images/hoddies/rva2.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
@@ -108,7 +108,7 @@ const products = [
     numReviews: 12,
   },
   {
-    name: "React Vue Angular Grey Hoddie",
+    name: "React Vue Angular Grey Hoodies",
     image: "/images/hoddies/rva3.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
@@ -120,7 +120,7 @@ const products = [
     numReviews: 12,
   },
   {
-    name: "React Vue Angular Grey Hoddie Combo",
+    name: "React Vue Angular Grey Hoodies Combo",
     image: "/images/hoddies/rva4.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
@@ -132,7 +132,7 @@ const products = [
     numReviews: 12,
   },
   {
-    name: "Node js Red Hoddie For Node Devs",
+    name: "Node js Red Hoodies For Node Devs",
     image: "/images/hoddies/nodejs.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
@@ -963,7 +963,7 @@ const products = [
     numReviews: 8,
   },
   {
-    name: "Android Red Hoddie For Women's",
+    name: "Android Red Hoodies For Women's",
     image: "/images/whoddies/wh-1.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
@@ -975,7 +975,7 @@ const products = [
     numReviews: 8,
   },
   {
-    name: "Web Dev Yellow Hoddie For Women's",
+    name: "Web Dev Yellow Hoodies For Women's",
     image: "/images/whoddies/wh-2.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
@@ -987,7 +987,7 @@ const products = [
     numReviews: 8,
   },
   {
-    name: "Python Red Hoddie For Women's",
+    name: "Python Red Hoodies For Women's",
     image: "/images/whoddies/wh-3.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
@@ -999,7 +999,7 @@ const products = [
     numReviews: 8,
   },
   {
-    name: "Node js Red Hoddie For Women's",
+    name: "Node js Red Hoodies For Women's",
     image: "/images/whoddies/wh-4.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
@@ -1011,7 +1011,7 @@ const products = [
     numReviews: 8,
   },
   {
-    name: "Flutter Red Hoddie For Women's",
+    name: "Flutter Red Hoodies For Women's",
     image: "/images/whoddies/wh-5.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
@@ -1023,7 +1023,7 @@ const products = [
     numReviews: 8,
   },
   {
-    name: "Android Red Hoddie For Women's",
+    name: "Android Red Hoodies For Women's",
     image: "/images/whoddies/wh-6.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
@@ -1035,7 +1035,7 @@ const products = [
     numReviews: 8,
   },
   {
-    name: "Trust Me Red Hoddie For Women's",
+    name: "Trust Me Red Hoodies For Women's",
     image: "/images/whoddies/wh-7.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
@@ -1047,7 +1047,7 @@ const products = [
     numReviews: 8,
   },
   {
-    name: "I'm Programmer Red Hoddie For Women's",
+    name: "I'm Programmer Red Hoodies For Women's",
     image: "/images/whoddies/wh-8.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
@@ -1059,7 +1059,7 @@ const products = [
     numReviews: 8,
   },
   {
-    name: "Trust Me Black Hoddie For Women's",
+    name: "Trust Me Black Hoodies For Women's",
     image: "/images/whoddies/wh-9.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
@@ -1071,7 +1071,7 @@ const products = [
     numReviews: 8,
   },
   {
-    name: "Test Code Black Hoddie For Women's",
+    name: "Test Code Black Hoodies For Women's",
     image: "/images/whoddies/wh-10.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
@@ -1083,7 +1083,7 @@ const products = [
     numReviews: 8,
   },
   {
-    name: "Github Red Hoddie For Women's",
+    name: "Github Red Hoodies For Women's",
     image: "/images/whoddies/wh-11.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",

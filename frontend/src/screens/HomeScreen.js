@@ -32,7 +32,7 @@ const HomeScreen = ({ match }) => {
           render={({ match }) => (
             <FilterProduct
               categoryName="hoddie"
-              heading="Latest Men's Hoddies"
+              heading="Latest Hoodies For Men's"
               match={match}
             />
           )}
@@ -65,7 +65,7 @@ const HomeScreen = ({ match }) => {
           render={({ match }) => (
             <FilterProduct
               categoryName="whoddies"
-              heading="Latest Women's Hoddie"
+              heading="Latest Women's Hoodies"
               match={match}
             />
           )}
