@@ -100,8 +100,8 @@ const OrderScreen = ({ match, history }) => {
     <Message variant="danger">{error}</Message>
   ) : (
     <>
-      <h1>Order {orderId}</h1>
-      <Row>
+      <h1 className="mt-5">Order {orderId}</h1>
+      <Row className="mb-5">
         <Col md={8}>
           <ListGroup variant="flush">
             <ListGroup.Item>
