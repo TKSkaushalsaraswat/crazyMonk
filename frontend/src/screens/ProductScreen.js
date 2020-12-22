@@ -197,11 +197,11 @@ const ProductScreen = ({ match, history }) => {
                   <ListGroup.Item>
                     <Button
                       onClick={addToCartHandler}
-                      className="btn-block"
+                      className="btn-block orange-btn"
                       type="button"
                       disabled={product.countInStock === 0}
                     >
-                      Add To Cart
+                      <i className="fas fa-shopping-cart"></i> Add To Cart
                     </Button>
                   </ListGroup.Item>
                 </ListGroup>
@@ -210,17 +210,7 @@ const ProductScreen = ({ match, history }) => {
           </Row>
           <Row>
             <Col md={6} className="py-5 reviews-class">
-              <h2>Reviews</h2>
-              {product.reviews.length === 0 && <Message>No Reviews</Message>}
               <ListGroup variant="flush">
-                {product.reviews.map((review) => (
-                  <ListGroup.Item key={review._id}>
-                    <strong>{review.name}</strong>
-                    <Rating value={review.rating} />
-                    <p>{review.createdAt.substring(0, 10)}</p>
-                    <p>{review.comment}</p>
-                  </ListGroup.Item>
-                ))}
                 <ListGroup.Item>
                   <h2>Write a Customer Review</h2>
                   {errorProductReview && (
@@ -252,7 +242,7 @@ const ProductScreen = ({ match, history }) => {
                           onChange={(e) => setComment(e.target.value)}
                         ></Form.Control>
                       </Form.Group>
-                      <Button type="submit" variant="primary">
+                      <Button className="blue-btn" type="submit">
                         Submit
                       </Button>
                     </Form>
@@ -263,6 +253,20 @@ const ProductScreen = ({ match, history }) => {
                   )}
                 </ListGroup.Item>
               </ListGroup>
+            </Col>
+            <Col md={6} className="py-5">
+              <h2 className="px-2">Reviews</h2>
+              {product.reviews.length === 0 && <Message>No Reviews</Message>}
+              {product.reviews.map((review) => (
+                <Card className="reviewCard" key={review._id}>
+                  <ListGroup.Item className="reviewCardItem">
+                    <p>Date: {review.createdAt.substring(0, 10)}</p>
+                    <h4 className="reviewName">{review.name}</h4>
+                    <Rating className="rating" value={review.rating} />
+                    <p>{review.comment}</p>
+                  </ListGroup.Item>
+                </Card>
+              ))}
             </Col>
           </Row>
         </>

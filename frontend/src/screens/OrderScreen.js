@@ -285,7 +285,7 @@ const OrderScreen = ({ match, history }) => {
                       shippingAddress
                       image="https://i.ibb.co/r03QpCT/59.png"
                     >
-                      <Button className="btn btn-block btn-primary">
+                      <Button className="btn btn-block yellow-btn">
                         Click To Pay ₹{order.totalPrice}
                       </Button>
                     </StripeCheckout>

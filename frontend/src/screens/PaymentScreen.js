@@ -53,7 +53,7 @@ const PaymentScreen = ({ history }) => {
           </Col>
         </Form.Group>
 
-        <Button type="submite" variant="primary">
+        <Button type="submite" className="blue-btn">
           Continue
         </Button>
       </Form>

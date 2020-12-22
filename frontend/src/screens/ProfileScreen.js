@@ -53,7 +53,7 @@ const ProfileScreeen = ({ location, history }) => {
   };
 
   return (
-    <Row>
+    <Row className="py-5">
       <Col md={3}>
         <h1>User Profile</h1>
         {message && <Message variant="danger">{message}</Message>}
@@ -102,7 +102,7 @@ const ProfileScreeen = ({ location, history }) => {
             ></Form.Control>
           </Form.Group>
 
-          <Button type="submit" variant="primary">
+          <Button type="submit" className="blue-btn">
             Update
           </Button>
         </Form>
