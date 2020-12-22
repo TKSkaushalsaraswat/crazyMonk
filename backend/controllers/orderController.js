@@ -1,5 +1,11 @@
 import asyncHandler from "express-async-handler";
 import Order from "../models/orderModel.js";
+import Stripe from "stripe";
+import { v4 as uuid } from "uuid";
+
+const stripe = new Stripe(
+  "sk_test_51HzEE9Kd1h1wYKmqqqCoWxertZLYn8gUOb7sS1FKkvTHd6s4dbBSLdrbO349Wgt1tCDey1tTsOmluoRw3nE4s5dL00zE8FcNDt"
+);
 
 // @desc     Get all orders
 // @route    Post /api/orders
@@ -66,7 +72,7 @@ const updateOrderToPaid = asyncHandler(async (req, res) => {
       id: req.body.id,
       status: req.body.status,
       update_time: req.body.update_time,
-      email_address: req.body.payer.email_address,
+      email_address: req.body.payer?.email_address || "",
     };
 
     const updatedOrder = await order.save();
@@ -115,6 +121,53 @@ const getAllOrders = asyncHandler(async (req, res) => {
   res.json(orders);
 });
 
+const checkOutStripe = asyncHandler(async (req, res) => {
+  console.log("Request:", req.body);
+
+  let error;
+  let status;
+  try {
+    const { order, token } = req.body;
+
+    const customer = await stripe.customers.create({
+      email: token.email,
+      source: token.id,
+    });
+
+    const idempotencyKey = uuid();
+    const charge = await stripe.charges.create(
+      {
+        amount: order.totalPrice * 100,
+        currency: "INR",
+        customer: customer.id,
+        receipt_email: token.email,
+        description: `Order Id ${order._id}`,
+        shipping: {
+          name: token.card.name,
+          address: {
+            line1: token.card.address_line1,
+            line2: token.card.address_line2,
+            city: token.card.address_city,
+            country: token.card.address_country,
+            postal_code: token.card.address_zip,
+          },
+        },
+      },
+      {
+        idempotencyKey,
+      }
+    );
+    console.log("Charge:", { charge });
+    status = "success";
+  } catch (error) {
+    console.log(error.message);
+    // console.error("Error:", error);
+    status = "failure";
+  }
+
+  res.json({ error, status });
+});
+
 export {
   addOrderItems,
   getOrderById,
@@ -122,4 +175,5 @@ export {
   getMyOrders,
   getAllOrders,
   updateOrderToDelivered,
+  checkOutStripe,
 };

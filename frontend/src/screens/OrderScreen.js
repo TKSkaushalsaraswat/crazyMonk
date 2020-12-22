@@ -12,6 +12,12 @@ import {
   ORDER_DELIVER_RESET,
 } from "../constants/orderConstants";
 import { listProducts } from "../actions/productActions";
+import StripeCheckout from "react-stripe-checkout";
+import { toast } from "react-toastify";
+
+import "react-toastify/dist/ReactToastify.css";
+
+toast.configure();
 
 const OrderScreen = ({ match, history }) => {
   const [sdkReady, setSdkReady] = useState(false);
@@ -43,6 +49,26 @@ const OrderScreen = ({ match, history }) => {
     order.itemsPrice = addDecimals(
       order.orderItems.reduce((acc, cur) => acc + cur.price * cur.qty, 0)
     );
+  }
+
+  const successPaymentHandle = (paymentResult) => {
+    dispatch(payOrder(orderId, paymentResult));
+  };
+
+  async function handleToken(token, addresses) {
+    const response = await axios.post("/api/checkout", {
+      token,
+      order,
+    });
+    const { status } = response.data;
+    // console.log("Response:", response);
+    if (status === "success") {
+      console.log(response);
+      dispatch(payOrder(orderId, response));
+      toast("Success! Check email for details", { type: "success" });
+    } else {
+      toast("Something went wrong", { type: "error" });
+    }
   }
 
   useEffect(() => {
@@ -85,10 +111,6 @@ const OrderScreen = ({ match, history }) => {
     userInfo,
     pageNumber,
   ]);
-
-  const successPaymentHandle = (paymentResult) => {
-    dispatch(payOrder(orderId, paymentResult));
-  };
 
   const deliverHandler = () => {
     dispatch(deliverOrder(order));
@@ -232,7 +254,7 @@ const OrderScreen = ({ match, history }) => {
                 </Row>
               </ListGroup.Item>
 
-              {!order.isPaid && (
+              {!order.isPaid && order.paymentMethod === "PayPal" && (
                 <ListGroup.Item>
                   {loadingPay && <Loader />}
                   {!sdkReady ? (
@@ -242,6 +264,31 @@ const OrderScreen = ({ match, history }) => {
                       amount={order.totalPrice}
                       onSuccess={successPaymentHandle}
                     />
+                  )}
+                </ListGroup.Item>
+              )}
+              {!order.isPaid && order.paymentMethod === "Stripe" && (
+                <ListGroup.Item>
+                  {loadingPay && <Loader />}
+                  {!sdkReady ? (
+                    <Loader />
+                  ) : (
+                    <StripeCheckout
+                      stripeKey="pk_test_51HzEE9Kd1h1wYKmqYKxXswQSlULXFYC2Fpra2KbNamMGQpymoVhxbrpB0OcYiRcy5E0JJC1KSWBKB9XwsjgSmBOv00KguJhKcQ"
+                      token={handleToken}
+                      amount={order.totalPrice * 100}
+                      currency="INR"
+                      description="CodeMonk Order"
+                      name={`Order ID ${order._id}`}
+                      label={`Click To Pay ₹${order.totalPrice} `}
+                      billingAddress
+                      shippingAddress
+                      image="https://i.ibb.co/r03QpCT/59.png"
+                    >
+                      <Button className="btn btn-block btn-primary">
+                        Click To Pay ₹{order.totalPrice}
+                      </Button>
+                    </StripeCheckout>
                   )}
                 </ListGroup.Item>
               )}
