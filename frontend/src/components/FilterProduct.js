@@ -109,7 +109,6 @@ const FilterProduct = ({ categoryName, heading, match }) => {
   return (
     <>
       <h1 className="px-3 py-1 heading-main">{heading}</h1>
-
       {loading ? (
         <Loader />
       ) : error ? (
