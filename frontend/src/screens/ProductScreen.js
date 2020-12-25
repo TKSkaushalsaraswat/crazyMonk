@@ -1,15 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  Row,
-  Col,
-  Image,
-  ListGroup,
-  Card,
-  Button,
-  Form,
-} from "react-bootstrap";
+import ReactImageMagnify from "react-image-magnify";
+import { Row, Col, ListGroup, Card, Button, Form } from "react-bootstrap";
 import Rating from "../components/Rating";
 import {
   listProductDetails,
@@ -86,7 +79,27 @@ const ProductScreen = ({ match, history }) => {
           <Meta title={product.name} />
           <Row>
             <Col md={6}>
-              <Image src={product.image} alt={product.name} fluid />
+              <ReactImageMagnify
+                {...{
+                  smallImage: {
+                    src: `${product.image}`,
+                    isFluidWidth: true,
+                    alt: product.name,
+                  },
+                  largeImage: {
+                    src: `${product.image}`,
+                    width: 1000,
+                    height: 1000,
+                    alt: product.name,
+                  },
+                  enlargedImageContainerDimensions: {
+                    width: "70%",
+                    height: "80%",
+                  },
+                  enlargedImageContainerClassName: "largImage",
+                }}
+              />
+              {/* <Image src={product.image} alt={product.name} fluid /> */}
             </Col>
             <Col md={3}>
               <ListGroup variant="flush">

@@ -518,3 +518,10 @@ h5 {
   font-size: 0.9rem !important;
   margin-bottom: 0.1rem !important;
 }
+
+.largImage {
+  border: none !important;
+  width: 400px !important;
+  height: 100% !important;
+  z-index: 100 !important;
+}
