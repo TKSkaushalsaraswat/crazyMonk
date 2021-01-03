@@ -88,8 +88,8 @@ const ProductScreen = ({ match, history }) => {
                   },
                   largeImage: {
                     src: `${product.image}`,
-                    width: 1000,
-                    height: 1000,
+                    width: 1200,
+                    height: 1200,
                     alt: product.name,
                   },
                   enlargedImageContainerDimensions: {
@@ -128,8 +128,8 @@ const ProductScreen = ({ match, history }) => {
                     </Form.Group>
                   </ListGroup.Item>
                 )}
-                {(product.category === "hoddie" ||
-                  product.category === "whoddies" ||
+                {(product.category === "hoodie" ||
+                  product.category === "whoodies" ||
                   product.category === "mtshirt" ||
                   product.category === "wtshirt") && (
                   <ListGroup.Item>

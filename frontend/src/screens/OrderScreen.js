@@ -193,8 +193,8 @@ const OrderScreen = ({ match, history }) => {
                         {products
                           .filter(
                             (product) =>
-                              (product.category === "hoddie" ||
-                                product.category === "whoddies" ||
+                              (product.category === "hoodie" ||
+                                product.category === "whoodies" ||
                                 product.category === "mtshirt" ||
                                 product.category === "wtshirt") &&
                               product._id === item.product

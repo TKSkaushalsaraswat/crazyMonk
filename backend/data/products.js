@@ -1,11 +1,11 @@
 const products = [
   {
     name: "Android Red Hoodies For Android Devs",
-    image: "/images/hoddies/android.jpg",
+    image: "/images/hoodies/android.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
     brand: "Apple",
-    category: "hoddie",
+    category: "hoodie",
     price: 799,
     countInStock: 10,
     rating: 5.0,
@@ -13,11 +13,11 @@ const products = [
   },
   {
     name: "React Vue Angular Red Hoodies",
-    image: "/images/hoddies/rva1.jpg",
+    image: "/images/hoodies/rva1.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
     brand: "Apple",
-    category: "hoddie",
+    category: "hoodie",
     price: 799,
     countInStock: 10,
     rating: 4.0,
@@ -25,11 +25,11 @@ const products = [
   },
   {
     name: "Flutter Black Hoodies For Flutter Devs",
-    image: "/images/hoddies/flutter.jpg",
+    image: "/images/hoodies/flutter.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
     brand: "Apple",
-    category: "hoddie",
+    category: "hoodie",
     price: 799,
     countInStock: 10,
     rating: 4.5,
@@ -37,11 +37,11 @@ const products = [
   },
   {
     name: "I'M A Programmer Black Hoodies",
-    image: "/images/hoddies/programmer.jpg",
+    image: "/images/hoodies/programmer.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
     brand: "Apple",
-    category: "hoddie",
+    category: "hoodie",
     price: 799,
     countInStock: 10,
     rating: 4.0,
@@ -49,11 +49,11 @@ const products = [
   },
   {
     name: "I'M Programmer Black Hoodies",
-    image: "/images/hoddies/programmer2.jpg",
+    image: "/images/hoodies/programmer2.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
     brand: "Apple",
-    category: "hoddie",
+    category: "hoodie",
     price: 799,
     countInStock: 10,
     rating: 4.0,
@@ -61,11 +61,11 @@ const products = [
   },
   {
     name: "Python Red Hoodies For Python Devs",
-    image: "/images/hoddies/python.jpg",
+    image: "/images/hoodies/python.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
     brand: "Apple",
-    category: "hoddie",
+    category: "hoodie",
     price: 799,
     countInStock: 10,
     rating: 4.0,
@@ -73,11 +73,11 @@ const products = [
   },
   {
     name: "You Are Semicolon Black Hoodies",
-    image: "/images/hoddies/semicolon.jpg",
+    image: "/images/hoodies/semicolon.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
     brand: "Apple",
-    category: "hoddie",
+    category: "hoodie",
     price: 799,
     countInStock: 10,
     rating: 4.0,
@@ -85,11 +85,11 @@ const products = [
   },
   {
     name: "I'M Programmer Black Hoodies ",
-    image: "/images/hoddies/trustme.jpg",
+    image: "/images/hoodies/trustme.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
     brand: "Apple",
-    category: "hoddie",
+    category: "hoodie",
     price: 799,
     countInStock: 10,
     rating: 4.0,
@@ -97,11 +97,11 @@ const products = [
   },
   {
     name: "React Vue Angular Yellow Hoodies",
-    image: "/images/hoddies/rva2.jpg",
+    image: "/images/hoodies/rva2.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
     brand: "Apple",
-    category: "hoddie",
+    category: "hoodie",
     price: 799,
     countInStock: 10,
     rating: 4.0,
@@ -109,11 +109,11 @@ const products = [
   },
   {
     name: "React Vue Angular Grey Hoodies",
-    image: "/images/hoddies/rva3.jpg",
+    image: "/images/hoodies/rva3.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
     brand: "Apple",
-    category: "hoddie",
+    category: "hoodie",
     price: 799,
     countInStock: 10,
     rating: 4.0,
@@ -121,11 +121,11 @@ const products = [
   },
   {
     name: "React Vue Angular Grey Hoodies Combo",
-    image: "/images/hoddies/rva4.jpg",
+    image: "/images/hoodies/rva4.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
     brand: "Apple",
-    category: "hoddie",
+    category: "hoodie",
     price: 1499,
     countInStock: 10,
     rating: 4.0,
@@ -133,11 +133,11 @@ const products = [
   },
   {
     name: "Node js Red Hoodies For Node Devs",
-    image: "/images/hoddies/nodejs.jpg",
+    image: "/images/hoodies/nodejs.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
     brand: "Apple",
-    category: "hoddie",
+    category: "hoodie",
     price: 799,
     countInStock: 10,
     rating: 4.0,
@@ -964,11 +964,11 @@ const products = [
   },
   {
     name: "Android Red Hoodies For Women's",
-    image: "/images/whoddies/wh-1.jpg",
+    image: "/images/whoodies/wh-1.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
     brand: "Apple",
-    category: "whoddies",
+    category: "whoodies",
     price: 799,
     countInStock: 7,
     rating: 4.0,
@@ -976,11 +976,11 @@ const products = [
   },
   {
     name: "Web Dev Yellow Hoodies For Women's",
-    image: "/images/whoddies/wh-2.jpg",
+    image: "/images/whoodies/wh-2.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
     brand: "Apple",
-    category: "whoddies",
+    category: "whoodies",
     price: 799,
     countInStock: 7,
     rating: 4.0,
@@ -988,11 +988,11 @@ const products = [
   },
   {
     name: "Python Red Hoodies For Women's",
-    image: "/images/whoddies/wh-3.jpg",
+    image: "/images/whoodies/wh-3.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
     brand: "Apple",
-    category: "whoddies",
+    category: "whoodies",
     price: 799,
     countInStock: 7,
     rating: 4.0,
@@ -1000,11 +1000,11 @@ const products = [
   },
   {
     name: "Node js Red Hoodies For Women's",
-    image: "/images/whoddies/wh-4.jpg",
+    image: "/images/whoodies/wh-4.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
     brand: "Apple",
-    category: "whoddies",
+    category: "whoodies",
     price: 799,
     countInStock: 7,
     rating: 4.0,
@@ -1012,11 +1012,11 @@ const products = [
   },
   {
     name: "Flutter Red Hoodies For Women's",
-    image: "/images/whoddies/wh-5.jpg",
+    image: "/images/whoodies/wh-5.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
     brand: "Apple",
-    category: "whoddies",
+    category: "whoodies",
     price: 799,
     countInStock: 7,
     rating: 4.0,
@@ -1024,11 +1024,11 @@ const products = [
   },
   {
     name: "Android Red Hoodies For Women's",
-    image: "/images/whoddies/wh-6.jpg",
+    image: "/images/whoodies/wh-6.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
     brand: "Apple",
-    category: "whoddies",
+    category: "whoodies",
     price: 799,
     countInStock: 7,
     rating: 4.0,
@@ -1036,11 +1036,11 @@ const products = [
   },
   {
     name: "Trust Me Red Hoodies For Women's",
-    image: "/images/whoddies/wh-7.jpg",
+    image: "/images/whoodies/wh-7.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
     brand: "Apple",
-    category: "whoddies",
+    category: "whoodies",
     price: 799,
     countInStock: 7,
     rating: 4.0,
@@ -1048,11 +1048,11 @@ const products = [
   },
   {
     name: "I'm Programmer Red Hoodies For Women's",
-    image: "/images/whoddies/wh-8.jpg",
+    image: "/images/whoodies/wh-8.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
     brand: "Apple",
-    category: "whoddies",
+    category: "whoodies",
     price: 799,
     countInStock: 7,
     rating: 4.0,
@@ -1060,11 +1060,11 @@ const products = [
   },
   {
     name: "Trust Me Black Hoodies For Women's",
-    image: "/images/whoddies/wh-9.jpg",
+    image: "/images/whoodies/wh-9.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
     brand: "Apple",
-    category: "whoddies",
+    category: "whoodies",
     price: 799,
     countInStock: 7,
     rating: 4.5,
@@ -1072,11 +1072,11 @@ const products = [
   },
   {
     name: "Test Code Black Hoodies For Women's",
-    image: "/images/whoddies/wh-10.jpg",
+    image: "/images/whoodies/wh-10.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
     brand: "Apple",
-    category: "whoddies",
+    category: "whoodies",
     price: 799,
     countInStock: 7,
     rating: 4.0,
@@ -1084,11 +1084,11 @@ const products = [
   },
   {
     name: "Github Red Hoodies For Women's",
-    image: "/images/whoddies/wh-11.jpg",
+    image: "/images/whoodies/wh-11.jpg",
     description:
       "Material/ Fabric: 100% Cotton, Bio-Wash Size & Fit: This brand runs true to size, To ensure the best fit, we suggest consulting the size chart, Wash: Don't use Soap or Detergent directly on print.",
     brand: "Apple",
-    category: "whoddies",
+    category: "whoodies",
     price: 799,
     countInStock: 7,
     rating: 4.0,
